@@ -1,1 +1,77 @@
 @import "tailwindcss";
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: black;
+}
+
+.battle-log-gradient {
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgb(0 0 0 / 0.8) 20%,
+    rgb(0 0 0 / 0.8) 80%,
+    transparent 100%
+  );
+}
+
+.bug-icon {
+  background-image: radial-gradient(#34d399, #059669);
+  border: 1px solid #04785744;
+}
+
+.sword-icon {
+  background-image: radial-gradient(#e44, #dc2626);
+  border: 1px solid #b91c1c;
+}
+
+.outer-stroke {
+  -webkit-text-stroke: 1.4px black;
+  paint-order: stroke fill;
+}
+
+.btn-text-stroke {
+  -webkit-text-stroke: 4px #1f2732;
+  paint-order: stroke fill;
+}
+
+.guard-mask {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M479.07 111.35a16 16 0 0 0-13.15-14.75C379.89 81.18 343.69 69.12 266 34.16c-7.76-2.89-12.57-2.84-20 0c-77.69 35-113.89 47-199.92 62.44a16 16 0 0 0-13.15 14.75c-3.85 61.1 4.34 118 24.36 169.15a348.9 348.9 0 0 0 71.43 112.41c44.67 47.43 94.2 75.12 119.74 85.6a20 20 0 0 0 15.11 0c27-10.92 74.69-37.82 119.71-85.62a348.9 348.9 0 0 0 71.43-112.39c20.02-51.14 28.21-108.05 24.36-169.15' stroke-width='4' stroke='%23bcbcbc'/%3E%3C/svg%3E");
+  mask-mode: alpha;
+  mask-repeat: no-repeat;
+  mask-size: cover; /* o contain, según prefieras */
+
+  /* Para WebKit/Safari: */
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 512 512'%3E%3Cpath fill='%23000' d='M479.07 111.35a16 16 0 0 0-13.15-14.75C379.89 81.18 343.69 69.12 266 34.16c-7.76-2.89-12.57-2.84-20 0c-77.69 35-113.89 47-199.92 62.44a16 16 0 0 0-13.15 14.75c-3.85 61.1 4.34 118 24.36 169.15a348.9 348.9 0 0 0 71.43 112.41c44.67 47.43 94.2 75.12 119.74 85.6a20 20 0 0 0 15.11 0c27-10.92 74.69-37.82 119.71-85.62a348.9 348.9 0 0 0 71.43-112.39c20.02-51.14 28.21-108.05 24.36-169.15' stroke-width='4' stroke='%23bcbcbc'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+}
+
+/* .animate-reflection {
+  animation: reflection 2s ease 0.2s 2;
+}
+
+@keyframes reflection {
+  0% {
+    transform: rotate(45deg) translateX(0);
+  }
+  100% {
+    transform: rotate(45deg) translateX(300px);
+  }
+} */
+
+.interactive-area-pattern {
+  background-color: #fafafa;
+  background-image:
+    linear-gradient(135deg, #cbd5e1 25%, transparent 25%),
+    linear-gradient(225deg, #cbd5e1 25%, transparent 25%),
+    linear-gradient(45deg, #cbd5e1 25%, transparent 25%),
+    linear-gradient(315deg, #cbd5e1 25%, #fafafa 25%);
+  background-position:
+    40px 0,
+    40px 0,
+    0 0,
+    0 0;
+  background-size: 40px 40px;
+  background-repeat: repeat;
+}
